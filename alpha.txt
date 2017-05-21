@@ -1,1 +1,10 @@
-hlooooo pavan
+{pavan[
+
+"Deptno":1 , "Dname":"ece", "Location":"HYD"
+"Deptno":2 , "Dname":"cse", "Location":"CHNI"
+"Deptno":3 , "Dname":"eee", "Location":"BANGLRE"
+"Deptno":4 , "Dname":"civil", "Location":"MUMBAI"
+
+
+]
+}

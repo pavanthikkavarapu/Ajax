@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script> alert("welcome")</script>
+</head>
+<body>
+<h3>Ajax programming using AJAX</h3>
+<hr/>
+<button onclick="f1()">Get Dept</button>
+<br>
+<table id="table1" border="2" width="250"></table>
+<script>
+var ar=[];
+function f1()
+{
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange=
+function()
+{
+if(this.readystate==4&&this.status=="200")
+{
+ar.JSON.parse(this.responsetext);
+displayResult();
+}
+};
+xmlhttp.open("GET","alpha.txt",true)
+xmlhttp.send();
+}
+function displayResult()
+{
+var obj=document.getElementById("table1");
+var str="<tr><th>Deptno</th><th>Dname</th><th>Location</th></tr>";
+for(var i=0;i<ar.length;i++)
+{
+str+="<tr>";
+str+="<td>"+ar[i].Deptno+"</td>";
+str+="<td>"+ar[i].Dname+"</td>";
+str+="<td>"+ar[i].Location+"</td>";
+
+str+="</tr>";
+}
+obj.innerHTML=str;
+}
+</script>
+</body>
+</html>
+
+
+
+</script>
+
+
+
+</body>
+</html>
